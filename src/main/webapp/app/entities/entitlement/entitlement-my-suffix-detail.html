@@ -1,0 +1,31 @@
+
+<div>
+    <h2><span data-translate="hippoApp.entitlement.detail.title">Entitlement</span> {{vm.entitlement.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="hippoApp.entitlement.name">Name</span></dt>
+        <dd>
+            <span>{{vm.entitlement.name}}</span>
+        </dd>
+        <dt><span data-translate="hippoApp.entitlement.appCode">App Code</span></dt>
+        <dd>
+            <span>{{vm.entitlement.appCode}}</span>
+        </dd>
+        <dt><span data-translate="hippoApp.entitlement.enabled">Enabled</span></dt>
+        <dd>
+            <span>{{vm.entitlement.enabled}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="entitlement-my-suffix-detail.edit({id:vm.entitlement.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,29 @@
+entity Employee {
+	employeeId String
+}
+
+entity Entitlement {
+	name String required
+    appCode String required
+    enabled Boolean
+}
+
+
+// defining multiple OneToMany relationships with comments
+relationship ManyToMany {
+	Employee{entitlement} to Entitlement{employee(employeeId)} 	
+}
+
+
+
+
+
+// Set pagination options
+paginate Entitlement, Employee with infinite-scroll
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee
+// Set an angular suffix
+angularSuffix * with mySuffix

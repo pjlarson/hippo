@@ -1,0 +1,24 @@
+{
+    "hippoApp": {
+        "entitlement" : {
+            "home": {
+                "title": "Entitlements",
+                "createLabel": "Create a new Entitlement",
+                "createOrEditLabel": "Create or edit a Entitlement"
+            },
+            "created": "A new Entitlement is created with identifier {{ param }}",
+            "updated": "A Entitlement is updated with identifier {{ param }}",
+            "deleted": "A Entitlement is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Entitlement {{ id }}?"
+            },
+            "detail": {
+                "title": "Entitlement"
+            },
+            "name": "Name",
+            "appCode": "App Code",
+            "enabled": "Enabled",
+            "employee": "Employee"
+        }
+    }
+}
